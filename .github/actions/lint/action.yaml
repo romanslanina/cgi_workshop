@@ -1,0 +1,9 @@
+name: "Run Linter"
+description: "Run linting"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Lint
+      run: pnpm lint
+      shell: bash

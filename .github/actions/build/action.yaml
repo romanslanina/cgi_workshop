@@ -1,0 +1,27 @@
+name: "Build App"
+description: "Build application for specific environment"
+inputs:
+  environment:
+    description: "Environment to build for (test, uat, prod)"
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - name: Set environment file
+      run: |
+        if [[ "${{ inputs.environment }}" == "test" ]]; then
+          cp .env.test .env
+        elif [[ "${{ inputs.environment }}" == "uat" ]]; then
+          cp .env.uat .env
+        elif [[ "${{ inputs.environment }}" == "prod" ]]; then
+          cp .env.prod .env
+        else
+          echo "Unknown environment: ${{ inputs.environment }}"
+          exit 1
+        fi
+      shell: bash
+
+    - name: Build
+      run: pnpm build
+      shell: bash
