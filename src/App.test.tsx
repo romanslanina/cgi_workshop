@@ -35,6 +35,9 @@ describe("App basics", () => {
   it("does not displays error alert", () => {
     render(<App />);
 
-
+    expect(screen.getByText("Kritická chyba!")).not.toBeInTheDocument();
+    expect(
+      screen.getByText("Toto je kritická chyba, oprav mne")
+    ).not.toBeInTheDocument();
   });
 });
