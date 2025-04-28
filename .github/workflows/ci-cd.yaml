@@ -22,6 +22,8 @@ jobs:
     if: github.event_name == 'pull_request' || (github.event_name == 'push' && github.ref_name == 'dev')
     uses: ./.github/workflows/validate.yaml
 
+  
+
   # 🚀 Job: Deploy při push (merge) do test/uat nebo main (jako prod) nebo manuálně
   deploy:
     if: (github.event_name == 'push' && github.ref_name != 'dev') || github.event_name == 'workflow_dispatch'
