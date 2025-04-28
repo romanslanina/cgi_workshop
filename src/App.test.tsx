@@ -35,6 +35,7 @@ describe("App basics", () => {
   it("does not displays error alert", () => {
     render(<App />);
 
+    
 
   });
 });
