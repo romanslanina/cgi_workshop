@@ -83,13 +83,7 @@ export const App = () => {
           </CardFooter>
         </Card>
 
-        <Alert variant="destructive" className="w-[350px] animate-pulse">
-          <AlertTriangle className="h-4 w-4" />
-          <AlertTitle>Kritická chyba!</AlertTitle>
-          <AlertDescription>
-            Toto je kritická chyba, oprav mne.
-          </AlertDescription>
-        </Alert>
+
       </div>
     </div>
   );
