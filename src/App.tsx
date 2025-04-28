@@ -76,9 +76,7 @@ export const App = () => {
             </Button>
           </CardContent>
           <CardFooter className="text-center text-muted-foreground flex flex-col gap-2">
-            <p className="text-center w-full">
-              Aplikace byla úspěšně aktualizována.
-            </p>
+
             <p className="text-center w-full">
               {import.meta.env.VITE_BUILD_FOR}
             </p>
@@ -87,9 +85,9 @@ export const App = () => {
 
         <Alert variant="destructive" className="w-[350px] animate-pulse">
           <AlertTriangle className="h-4 w-4" />
-          <AlertTitle>Kritická chyba!</AlertTitle>
+          <AlertTitle>Vse OK!</AlertTitle>
           <AlertDescription>
-            Toto je kritická chyba, oprav mne.
+            Text...
           </AlertDescription>
         </Alert>
       </div>
