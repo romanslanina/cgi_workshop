@@ -85,9 +85,9 @@ export const App = () => {
 
         <Alert variant="destructive" className="w-[350px] animate-pulse">
           <AlertTriangle className="h-4 w-4" />
-          <AlertTitle>Kritická chyba!</AlertTitle>
+          <AlertTitle>Vse OK!</AlertTitle>
           <AlertDescription>
-            Toto je kritická chyba, oprav mne.
+            Text...
           </AlertDescription>
         </Alert>
       </div>
