@@ -76,9 +76,7 @@ export const App = () => {
             </Button>
           </CardContent>
           <CardFooter className="text-center text-muted-foreground flex flex-col gap-2">
-            <p className="text-center w-full">
-              Aplikace byla úspěšně aktualizována.
-            </p>
+
             <p className="text-center w-full">
               {import.meta.env.VITE_BUILD_FOR}
             </p>
